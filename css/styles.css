@@ -1,0 +1,252 @@
+/**Background image from: https://www.flickr.com/photos/alphageek/121953651 **/
+body,html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-image: url(../images/carts.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-width: 300px;
+
+}
+/**************************CENTERS VERTICALLY*********************************/
+/*http://stackoverflow.com/questions/396145/how-to-vertically-center-a-div-for-all-browsers*/
+
+.vertical-wrap {
+  height: 100%;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.vertical-wrap:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: -.25em;
+  height: 100%;
+}
+
+/***************************CENTERED CONTENT**********************************/
+
+.centered {
+  display: inline-block;
+  vertical-align: middle;
+  white-space: normal;
+  background-color: #F7F5F3;
+  opacity: .98;
+
+
+}
+
+
+/****************************HEADER SECTION***********************************/
+
+header h1 {
+  font-family: 'Sigmar One', cursive;
+  margin-bottom: 0;
+
+}
+
+header h2{
+  font-family: 'Hammersmith One', sans-serif;
+  margin-top: 0;
+  font-weight: 200;
+  font-style:italic;
+  color: #714D92;
+}
+
+
+/******************************USER INPUT SECTION******************************/
+
+#catComboBox {
+  font-family: 'Hammersmith One', sans-serif;
+
+}
+
+#addBtn
+{
+  font-family: FontAwesome;
+  cursor: move;
+  outline: none;
+  background: none;
+  border: none;
+  color: green;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  float: right;
+
+
+
+
+}
+
+.inputSection hr {
+  border: 1px solid #808180;
+}
+
+
+/******************************RESULT LIST SECTION*****************************/
+.shoppingList {
+  padding-left: 0;
+}
+
+.shoppingList ul {
+  list-style-type: none;
+}
+
+.shoppingList li{
+  display: block;
+  padding: 0;
+  margin-bottom: 2%;
+
+}
+
+.shoppingList li .itemLbl {
+
+  float: left;
+  text-align: left;
+  font-family: 'Hammersmith One', sans-serif;
+}
+
+
+.shoppingList .itemLbl:hover{
+  background-color: #FF9243;
+}
+
+.catLbl{
+  background-color: #714D92;
+  color: white;
+  font-family: 'Hammersmith One', sans-serif;
+  display: inline-block;
+}
+
+
+#delBtn {
+  cursor: move;
+  float: right;
+  display: inline-block;
+  outline: none;
+  background: none;
+  border: none;
+  font-family: FontAwesome;
+
+}
+
+#delBtn:hover {
+  color: darkred;
+}
+
+
+/******************************RESPONSIVE SECTION*****************************/
+@media screen and (min-width: 300px) {
+
+    .centered {
+      width: 100%;
+      min-height: 44%;
+      box-shadow: 0 0 8rem #74462e;
+      border-radius: .9rem;
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+    }
+    header h2 {
+      font-size: 1rem;
+    }
+
+    #inputTextBox {
+      width: 45%;
+      margin-right: 2.5%;
+    }
+
+    #catComboBox {
+      width: 36%;
+      margin-right: 2.5%;
+    }
+
+    #addBtn {
+      width: 9%;
+      font-size: 1.3rem;
+    }
+
+    .inputSection hr {
+      margin-top: 4%;
+    }
+
+    .inputSection, .resultSection, .shoppingList li{
+      margin: 2%;
+    }
+
+    .shoppingList li .itemLbl {
+      width: 65%;
+    }
+
+    .catLbl {
+      width: 20%;
+      max-width: 6rem;
+      font-size: .8rem;
+    }
+    #delBtn {
+      font-size: 1.1rem;
+    }
+}
+
+@media screen and (min-width: 400px) {
+    .centered {
+      width: 90%;
+    }
+
+    header h1 {
+      font-size: 1.7rem;
+    }
+    header h2 {
+      font-size: 1.1rem;
+    }
+}
+
+@media screen and (min-width: 600px) {
+  .centered {
+    width: 70%;
+    border-radius: 1.5rem;
+  }
+
+  header h1 {
+    font-size: 1.9rem;
+  }
+  header h2 {
+    font-size: 1.3rem;
+  }
+  .catLbl {
+    font-size: .9rem;
+  }
+}
+
+@media screen and (min-width: 800px) {
+    .centered {
+      width: 60%;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .centered {
+        width: 50%;
+        border-radius: 1.8rem;
+        max-width: 38rem;
+    }
+    header h1 {
+      font-size: 2rem;
+    }
+    header h2 {
+      font-size: 1.5rem;
+    }
+    .catLbl {
+      font-size: 1rem;
+    }
+    #addBtn {
+      font-size: 1.6rem;
+    }
+    #delBtn {
+      font-size: 1.3rem;
+    }
+}

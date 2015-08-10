@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Finger+Paint|Sigmar+One|Frijole|Faster+One|Hammersmith+One|Rock+Salt' rel='stylesheet' type='text/css'>
+    <!-- icon from: http://famfamfam.com/lab/icons/silk/ -->
+    <link rel="shortcut icon" type="image/x-icon"  href="cart.ico">
+    <script src="http://code.jquery.com/jquery.min.js"></script>
+    <title>Shopping List</title>
+  </head>
+
+  <body>
+
+    <!-----------------------VERTICAL AND HORIZONTAL CENTERING DIVS------------------------------->
+    <!-- http://stackoverflow.com/questions/396145/how-to-vertically-center-a-div-for-all-browsers -->
+    <div class="vertical-wrap">
+      <div class = "centered">
+
+        <!-----------------------HEADER SECTION------------------------------->
+        <header>
+          <h1> Fill My Cart </h1>
+          <h2> A Shopping List App </h2>
+        </header>
+
+        <!-----------------------USER INPUT SECTION------------------------------->
+        <section class="inputSection">
+          <form>
+            <input type="search" id="inputTextBox" autofocus />
+
+            <select name="store-categories" id="catComboBox" required>
+              <option value = "produce"> produce </option>
+              <option value = "dairy">   dairy   </option>
+              <option value = "meat">    meat    </option>
+              <option value = "grains">  grains  </option>
+              <option value = "canned">  canned  </option>
+              <option value = "frozen">  frozen  </option>
+              <option value = "extras">  extras  </option>
+            </select>
+
+            <button id="addBtn" type ="submit"> &#xf055 </button>
+         </form>
+          <hr>
+      </section>
+
+      <!-----------------------LIST RESULTS SECTION------------------------------->
+
+      <section class="resultSection">
+        <ul class = "shoppingList">
+          <li>
+             <label class="itemLbl">
+                <input type="checkbox" name="purchasedItems" value="grapes "> Grapes
+             </label>
+             <label class="catLbl"> produce </label>
+             <button id= "delBtn" type ="submit"> &#xf1f8 </button>
+          </li>
+
+          <li>
+            <label class="itemLbl">
+              <input type="checkbox" name="purchasedItems" value="soup"> soup
+            </label>
+            <label class="catLbl"> canned</label>
+            <button id= "delBtn" type ="submit"> &#xf1f8 </button>
+          </li>
+      </ul>
+      </section>
+    </div>
+  </div>
+ </body>
+</html>
