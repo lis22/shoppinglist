@@ -156,7 +156,7 @@ header h2{
     }
 
     #inputTextBox {
-      width: 45%;
+      width: 40%;
       margin-right: 2.5%;
     }
 
@@ -230,9 +230,9 @@ header h2{
 
 @media screen and (min-width: 1000px) {
     .centered {
-        width: 50%;
-        border-radius: 1.8rem;
-        max-width: 38rem;
+      width: 50%;
+      border-radius: 1.8rem;
+      max-width: 38rem;
     }
     header h1 {
       font-size: 2rem;
