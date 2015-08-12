@@ -66,7 +66,6 @@ header h2{
 #addBtn
 {
   font-family: FontAwesome;
-  cursor: move;
   outline: none;
   background: none;
   border: none;
@@ -75,9 +74,6 @@ header h2{
   margin: 0;
   display: inline-block;
   float: right;
-
-
-
 
 }
 
@@ -102,6 +98,10 @@ header h2{
 
 }
 
+.checkedItem {
+  vertical-align: middle;
+}
+
 #shoppingList li .itemLbl {
 
   float: left;
@@ -120,7 +120,7 @@ header h2{
   font-family: 'Hammersmith One', sans-serif;
   display: inline-block;
 }
- 
+
 
 .delBtn {
   cursor: move;
@@ -176,6 +176,11 @@ header h2{
 
     .inputSection, .resultSection, #shoppingList li{
       margin: 2%;
+    }
+
+    .checkedItem {
+      margin-left: 2%;
+      margin-right: 1%;
     }
 
     #shoppingList li .itemLbl {

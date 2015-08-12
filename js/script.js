@@ -19,8 +19,7 @@ function createList() {
     };
 }
 /* Takes in user input and adds it to the list */
-function addItem()
-{
+function addItem() {
     $("#inputForm").submit(function(e) {
       e.preventDefault();
 
