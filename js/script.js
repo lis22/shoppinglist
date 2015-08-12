@@ -19,8 +19,7 @@ function createList() {
     };
 }
 /* Takes in user input and adds it to the list */
-function addItem()
-{
+function addItem(){
     $("#inputForm").submit(function(e) {
       e.preventDefault();
 
@@ -74,7 +73,7 @@ function  checkItem() {
 
     } else {
       $(itemLbl).css('textDecoration', 'none');
-       $(itemLbl).css('color', 'black');
+      $(itemLbl).css('color', 'black');
      }
   });
 }
