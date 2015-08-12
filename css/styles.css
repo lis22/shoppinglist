@@ -66,7 +66,6 @@ header h2{
 #addBtn
 {
   font-family: FontAwesome;
-  cursor: move;
   outline: none;
   background: none;
   border: none;
@@ -75,9 +74,6 @@ header h2{
   margin: 0;
   display: inline-block;
   float: right;
-
-
-
 
 }
 
@@ -100,6 +96,10 @@ header h2{
   padding: 0;
   margin-bottom: 2%;
 
+} 
+
+.checkedItem {
+  vertical-align: middle;
 }
 
 #shoppingList li .itemLbl {
@@ -114,11 +114,6 @@ header h2{
   background-color: #FF9243;
 }
 
-.checkedItem {
-  vertical-align: middle;
-}
-
-
 .catLbl{
   background-color: #714D92;
   color: white;
@@ -128,6 +123,7 @@ header h2{
 
 
 .delBtn {
+  cursor: move;
   float: right;
   display: inline-block;
   outline: none;
@@ -188,7 +184,7 @@ header h2{
     }
 
     #shoppingList li .itemLbl {
-      width: 65%;
+      width: 60%;
     }
 
     .catLbl {
@@ -239,9 +235,9 @@ header h2{
 
 @media screen and (min-width: 1000px) {
     .centered {
-      width: 50%;
-      border-radius: 1.8rem;
-      max-width: 38rem;
+        width: 50%;
+        border-radius: 1.8rem;
+        max-width: 38rem;
     }
     header h1 {
       font-size: 2rem;
